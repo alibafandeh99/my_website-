@@ -1,0 +1,168 @@
+/* استایل‌های پیش‌فرض */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s ease;
+}
+
+header {
+  background-color: #0044cc;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo h1 {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+header .toggle-container {
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#projects-slider {
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#projects-slider h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0044cc;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 30%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.slide h3 {
+  color: #0044cc;
+}
+
+#timeline {
+  margin: 40px auto;
+  text-align: center;
+}
+
+#timeline h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0044cc;
+}
+
+.timeline-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.timeline-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 0 0 45%;
+}
+
+/* کادر پایین */
+#bottom-section {
+  background-color: #0044cc;
+  padding: 40px;
+  margin: 40px auto;
+  text-align: center;
+  width: 80%;
+  border-radius: 10px;
+}
+
+/* استایل برای حالت شب */
+body.night-mode {
+  background-color: #2f2f2f;
+  color: red;
+}
+
+/* اضافه کردن حاشیه سبز به کادر در حالت شب */
+body.night-mode header,
+body.night-mode .slider .slide,
+body.night-mode .timeline-item,
+body.night-mode footer,
+body.night-mode #bottom-section {
+  border: 2px solid #32cd32; /* حاشیه سبز */
+}
+
+body.night-mode header {
+  background-color: #003366;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.night-mode .toggle-container {
+  color: white;
+}
+
+body.night-mode .slider .slide {
+  background-color: #444;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+body.night-mode .timeline-item {
+  background-color: #444;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+body.night-mode footer {
+  color: #fff;
+  background-color: #1c1c1c;
+}
+
+body.night-mode h1,
+body.night-mode h2,
+body.night-mode .slide h3 {
+  color: #ff4747;
+}
+
+body.night-mode footer {
+  color: #fff;
+  background-color: #1c1c1c;
+}
